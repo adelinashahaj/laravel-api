@@ -8,8 +8,8 @@ use Illuminate\Http\Request;
 class ProjectController extends Controller
 {
     public function index() {
-        $projects = Project::with(['technology', 'types'])->paginate(6); //->get();
-        
+        $projects = Project::with(['technologies', 'type'])->paginate(6);
+
         return response()->json([
             'susccess'=> true,
             'results'=> $projects
