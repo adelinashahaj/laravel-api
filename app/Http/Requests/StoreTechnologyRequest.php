@@ -25,7 +25,6 @@ class StoreTechnologyRequest extends FormRequest
     {
         return [
             'name'=> 'required|max:30|unique:types,name',
-
             'type_id' => 'nullable|exists:types,id',
             'technologies' => 'exists:technologies,id'
 

@@ -19,13 +19,7 @@
                             <a class="nav-link" href="{{url('/') }}">{{ __('Home') }}</a>
 
                         </li>
-                        <li>
-                            <a class="nav-link" href="{{route('admin.projects.create')}}">{{ __('New project') }}</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="{{route('admin.technologies.create')}}">{{ __('New technology') }}</a>
-                        </li>
-
+                       
                     </ul>
 
                     <!-- Right Side Of Navbar -->
